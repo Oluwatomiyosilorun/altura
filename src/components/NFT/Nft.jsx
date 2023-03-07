@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Modal } from '../Modal/Modal';
+import { CardModal } from '../Modal/CardModal';
 import s from './style.module.css'
 
 export function Nft({ nft }) {
@@ -30,17 +30,7 @@ export function Nft({ nft }) {
             </div>
         ))}
 
-    {clickedNft &&
-        <Modal onClose={handleCloseModal} isOpen={isModalOpen} title={clickedNft?.name}>
-            <div className={s.modal_children}>
-                <p>Owners Address: <span>{clickedNft?.creator?.address }</span></p>
-                <p>Description: <span>{clickedNft?.asset_contract?.description || 'It\'s a fine piece of Art '}</span></p>
-                <div className={s.button}>
-                    <button onClick={handlePurchaseClick}>Purchase</button>
-                </div>
-            </div>
-        </Modal>
-    }
+    {clickedNft && <CardModal isOpen={isModalOpen} onClose={handleCloseModal} title={clickedNft?.name} clickedNft={clickedNft} handlePurchaseClick={handlePurchaseClick}/>}
     </div>
   );
 }

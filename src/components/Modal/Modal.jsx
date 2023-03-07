@@ -16,7 +16,7 @@ export function Modal({ isOpen, onClose,title,children }) {
                         X
                     </button>
                 </div>
-                    {children}
+                {children}
             </div>
         </div>
     )
