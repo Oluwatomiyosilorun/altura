@@ -16,8 +16,6 @@ function App() {
     fetchNfts();
   }, []);
 
-  console.log(nfts, 'nfts');
-
   return (
     <div className={s.main_container}>
       <div className={s.half_banner}>
