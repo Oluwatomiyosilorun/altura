@@ -4,21 +4,20 @@
 }
 
 .half_banner{
-    background-color: white;
-    height: 50vh;
+    background-color: #fcfdf8;
+    height: 70vh;
     width: 100%;
     padding: 25px;
 }
 
 .half_banner_image{
-    position: absolute;;
+    position: absolute;
     width: 100%;
+    height: 70%;
     top: 0px;
     left: 0;
     right: 0;
-    object-fit: cover;
-    min-height: 300px;
-    max-height: 500px;
+    object-fit: contain;
 }
 
 .header{
