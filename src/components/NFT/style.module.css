@@ -1,0 +1,71 @@
+.container{
+    display: flex;
+    overflow-x: hidden;
+    width: 100vw;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px 20px;
+    margin-top: 30px;
+    color: black;
+}
+
+.card{
+    width:  300px;
+    height: 300px;
+    background: white;
+    border-radius: 4px;
+    border: 4px solid whitesmoke;
+    
+}
+
+.card img{
+    width: 100%;
+    object-fit: cover;
+    height: inherit;
+    cursor: pointer;
+}
+
+.description{
+    position: relative;
+    margin-top: -45px;
+    background-color: white;
+    padding: 10px;
+}
+
+.description h3{
+    font-weight: 500;
+    font-family: cursive;
+    font-size: 14px;
+    text-align: center;
+}
+
+.modal_children{
+    padding: 10px 20px;
+}
+
+.modal_children p{
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+.modal_children p span{
+    font-weight: 100;
+}
+
+.button{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button button{
+    padding: 12px 40px;
+    background: black;
+    color: white;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
