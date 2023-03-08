@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import s from './style.module.css'
 export function Modal({ isOpen, onClose,title,children }) {
     return (

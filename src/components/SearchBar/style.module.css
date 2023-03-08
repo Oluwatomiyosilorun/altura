@@ -1,0 +1,35 @@
+.search{
+    position: absolute;
+    top: 0;
+    margin-left: 20%;
+    margin-top: 1.5%;
+    width: 60%;
+    text-align: center;
+}
+
+.icon{
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 7px;
+}
+
+.input{
+    border-radius: 30px;
+    background-color: rgba(245, 245, 245, 0.569);
+    height: 30px;
+    color: white;
+    font-weight: 100;
+    font-size: 20px;
+    width: 60%;
+    border-color: transparent;
+    padding: 18px 18px 18px 50px;
+}
+
+input::placeholder{
+    color: white;
+}
+
+input:focus{
+    outline-width: 0;
+    border: 1px solid white;
+}
