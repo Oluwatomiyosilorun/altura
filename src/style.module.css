@@ -25,6 +25,10 @@
     margin-top: 10px;
 }
 
-.logo_search{
-    display: flex;
+.back{
+    margin: 0 3rem;
+    width: 100px;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
 }

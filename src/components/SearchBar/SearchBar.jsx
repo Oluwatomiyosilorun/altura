@@ -23,7 +23,7 @@ export function SearchBar({ onSearch }) {
         onChange={handleChange}
         className={s.input}
         type="text"
-        placeholder="Search nft by name"
+        placeholder="Search NFT by name"
         value={value}
       />
     </div>

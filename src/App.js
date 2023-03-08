@@ -12,6 +12,8 @@ function App() {
   const [isDataLoaded, setIsDataLoaded] = useState(false)
   const [search, setSearch] = useState('')
   const [noResults, setNoResults] = useState(false)
+  const [searched, setSearched] = useState(false)
+
 
 
   async function fetchNfts() {
@@ -30,6 +32,11 @@ function App() {
   function handleSearch(value) {
     setSearch(value)
     setNoResults(false)
+    setSearched(true);
+  }
+
+  function goBack() {
+    window.location.reload()
   }
 
   useEffect(() => {
@@ -51,14 +58,15 @@ function App() {
   return (
     <div className={s.main_container}>
       <div className={s.half_banner}></div>
-      <div className={s.logo_search}>
-        <Logo title="Purchase" />
-        <SearchBar onSearch={handleSearch} />
-      </div>
+      <Logo title="Purchase" />
+      <SearchBar onSearch={handleSearch} />
       {isDataLoaded && (
         <Suspense fallback={<div className={s.loading}>Loading...</div>}>
           {filteredNfts.length > 0 ? (
-            <Nft nft={filteredNfts} />
+            <>
+              {searched && <button onClick={goBack} className={s.back}>&#8592; Go Back</button>}
+              <Nft nft={filteredNfts} />
+            </>
           ) : (
             noResults && (
               <div className={s.no_results}>No search results found</div>

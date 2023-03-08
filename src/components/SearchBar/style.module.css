@@ -1,6 +1,4 @@
 .search{
-    position: absolute;
-    top: 0;
     margin-left: 20%;
     margin-top: 1.5%;
     width: 60%;
@@ -9,27 +7,42 @@
 
 .icon{
     position: absolute;
-    margin-left: 15px;
-    margin-top: 7px;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
 }
 
 .input{
     border-radius: 30px;
-    background-color: rgba(245, 245, 245, 0.569);
+    background-color: whitesmoke;
     height: 30px;
-    color: white;
     font-weight: 100;
     font-size: 20px;
-    width: 60%;
-    border-color: transparent;
-    padding: 18px 18px 18px 50px;
+    width: 65%;
+    border: 1px solid white;
+    padding: 2rem 2rem 2rem 3rem;
 }
 
 input::placeholder{
-    color: white;
+    color: gray;
+    font-size: 16px;
 }
 
 input:focus{
     outline-width: 0;
     border: 1px solid white;
+}
+
+@media screen and (max-width: 768px){
+    .search{
+        margin-left: 10%;
+        width: 78%;
+    }
+    .input{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .icon{
+        margin-top: 2rem;
+    }
 }
